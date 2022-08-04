@@ -471,6 +471,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   font-size: 16px;
+  background-color: #f6f6f6;
 }
 
 a {
@@ -487,10 +488,27 @@ h6 {
   margin: 0;
 }
 
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1230px;
   padding: 0 15px;
+}
+
+.section__wrapper {
+  background-color: #fff;
+}
+
+.section__wrapper .section__name {
+  padding-top: 40px;
+  margin-left: 20px;
+  font-size: 28px;
 }
 
 .header {
@@ -643,4 +661,30 @@ h6 {
 
 .header__logo .logo .logo__content .bottom__content {
   font-size: 14px;
+}
+
+.services .services__catalog {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services .services__catalog .services__item {
+  display: block;
+  text-align: center;
+  width: 360px;
+  margin: 5px;
+  border: 1px solid #ccc;
+}
+
+.services .services__catalog .services__item img {
+  height: 230px;
+}
+
+.services .services__catalog .services__item p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #f72303;
 }
